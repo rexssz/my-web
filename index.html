@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start Page - Toriq</title>
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- feather icon script -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- my style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="navbar">
+                <nav class="navbar-nav">
+                    <div class="left-page">
+                        <h1>Welcome</h1>
+                        <p>Have nice day, sir!</p>
+                    </div>
+                </nav>
+            </div>
+            <div class="datetime">
+                <div class="clock" id="clock">
+                    <div id="hour">00</div>
+                    <div id="minutes">00</div>
+                </div>
+                <div class="date" id="date">00/00/0000</div>
+            </div>
+            <div class="search">
+                <form action="https://www.google.com/search" method="get" id="submit-search">
+                    <button type="submit" id="btn-input">
+                        <i data-feather="search"></i>
+                    </button>
+                    <input name="q" type="text" placeholder="Search On Google" id="searchBar" autocomplete="off">
+                </form>
+            </div>
+            <div class="container-shortcuts">
+
+                <div class="shortcuts" id="shortcuts">
+                    <div class="shortcut-value" id="valueShrct">
+                        <a href="https://chat.openai.com" target="_blank" title="chatgpt">
+                            <img src="img/gpt.png" alt="chatgpt">
+                        </a>
+                        <a href="https://youtube.com" target="_blank" title="youtube">
+                            <img src="img/youtube.png" alt="youtube">
+                        </a>
+                        <a href="https://mail.google.com" target="_blank" title="gmail">
+                            <img src="img/gmail.png" alt="gmail">
+                        </a>
+                        <a href="https://github.com" target="_blank" title="github">
+                            <img src="img/github.png" alt="github">
+                        </a>
+                    </div>
+                </div>
+                <div class="pop-up" id="popupInput">
+                    <div class="popup-content">
+                        <button class="close-btn" id="closeBtn">&times;</button>
+                        <h1>Add Shortcut</h1>
+                        <form action="">
+                            <label for="name">Shortcut Name: </label><br>
+                            <input type="text" name="name" id="Name"><br><br>
+                            <label for="url">Url Shortcut:</label><br>
+                            <input type="url" name="url" id="Link"><br><br>
+                            <button type="submit" id="addBtn">Enter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row2">
+            <div class="quote" id="quote">"Loading inspirasi..."</div>
+            <div class="highlight">
+            </div>
+        </div>
+    </div>
+    <!-- my script -->
+    <script src="script.js"></script>
+    <!-- feather icon script -->
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
