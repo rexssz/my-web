@@ -274,6 +274,10 @@ body {
         font-size: 90%;
     }
 
+    .navbar-nav .left-page h1{
+        font-size: 1.6rem;
+    }
+
     .search form {
         margin: 0 2vw;
     }
